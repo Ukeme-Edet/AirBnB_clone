@@ -1,0 +1,94 @@
+section.filters {
+	background-color: #fff;
+	height: 70px;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	display: flex;
+	position: relative;
+}
+section.filters > button {
+	font-size: 18px;
+	background-color: #B30007;
+	color: #fff;
+	height: 48px;
+	width: 20%;
+	border: none;
+	border-radius: 4px;
+	margin-right: 30px;
+	display: inline-block;
+	position: absolute;
+	align-self: center;
+	right: 0;
+}
+section.filters > button:hover {
+	opacity: 90%;
+}
+
+section.filters > div {
+	height: 100%;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+section.filters > div:hover > ul {
+	display: block;
+}
+
+section.filters > div:nth-child(1) {
+	border-right: 1px solid #ddd;
+}
+
+section.filters > div > h3 {
+	font-weight: 600;
+	margin: 5px;
+}
+
+section.filters > div > h4 {
+	font-weight: 400;
+	font-size: 14px;
+	margin: 5px;
+}
+
+section.filters > div > ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fafafa;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+section.filters > div > ul > ul {
+	margin: 0;
+	padding: 15px;
+}
+
+section.filters > div ul {
+	list-style: none;
+	margin: 0;
+}
+@media screen and (max-width: 960px) {
+	section.filters > button {
+		width: 100%;
+		margin-right: 0;
+	}
+	section.filters > div {
+		width: 50%;
+	}
+	section.filters > div:nth-child(1) {
+		border-right: none;
+		border-bottom: 1px solid #ddd;
+	}
+	section.filters > div:nth-child(2) {
+		border-bottom: 1px solid #ddd;
+	}
+}
