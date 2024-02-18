@@ -24,7 +24,8 @@ section.places > article > .place-top {
 	align-items: center;
 	height: 80px;
 }
-section.places > article .place-top div, h2{
+section.places > article .place-top div,
+h2 {
 	font-size: 30px;
 	align-self: center;
 }
@@ -70,4 +71,67 @@ section.places > article > .user {
 	display: flex;
 	align-items: center;
 	margin: 20px 0;
+}
+.amenities {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: flex-start;
+	margin-top: 40px;
+}
+.amenities > h2 {
+	font-size: 16px;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.amenities > ul {
+	list-style: none;
+	padding: 0;
+}
+.amenities > ul > li {
+	padding: 10px 30px;
+	box-sizing: border-box;
+}
+.amenities > ul > li.tva {
+	background: url("../images/icon_tv.png") left center no-repeat;
+	background-size: 20px;
+}
+.amenities > ul > li.wifia {
+	background: url("../images/icon_wifi.png") left center no-repeat;
+	background-size: 20px;
+}
+.amenities > ul > li.pfa {
+	background: url("../images/icon_pets.png") left center no-repeat;
+	background-size: 20px;
+}
+.reviews {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+.reviews > h2 {
+	font-size: 16px;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	margin: 0;
+}
+.reviews > ul {
+	list-style: none;
+	padding: 0;
+}
+.reviews > ul h3 {
+	font-size: 14px;
+	margin: 0;
+}
+.reviews > ul p {
+	font-size: 12px;
+	margin: 0;
+}
+.reviews > ul > li {
+	padding: 10px 0;
+	box-sizing: border-box;
 }
